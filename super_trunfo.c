@@ -1,9 +1,8 @@
 #include <stdio.h>
 
+    // Desafio Super Trunfo - Países
 int main() {
     
-    // Desafio Super Trunfo - Países
-
    int turisticos1, turisticos2;
    int população1, população2;
    float area1, area2;
@@ -49,10 +48,22 @@ int main() {
    scanf("%f", &pib2);
 
 
+      // Nível Aventureiro
+     // Adicionar Densidade Populacional é PIB Per Capita
+     float densidade1, densidade2;
+     float PIB1, PIB2;
+ 
+   densidade1= (float)(população1 / area1);
+   densidade2= (float)(população2 / area2);
+   PIB1= (float)(pib1 / população1);
+   PIB2= (float)(pib1 / população2);
+ 
+
    //pular Linha para os dados da primeira carta
     printf("\n\n");
    
    //escrevendo os dados da primeira carta 
+   printf("Carta 1:\n");
    printf("Código 1: %s \n", codigo1);
    printf("Cidade 1: %s \n", cidade1);
    printf("Estado 1: %s \n", estado1);
@@ -60,11 +71,14 @@ int main() {
    printf("População 1:%d \n", população1);
    printf("Area 1: %.2f km² \n", area1);
    printf("PIB 1: %f Bilhões de reais\n", pib1);
+   printf("Densidade Populacional 1: %.2f hab/km²\n", densidade1);
+   printf("PIB Per Capital 1: %f reais\n", PIB1);
    
    //pular Linha para os dados da segunda carta
      printf("\n\n");
    
    //escrevendo os dados da segunda carta 
+    printf ("Carta 2:\n");
     printf("Código 2: %s \n", codigo2);
     printf("Cidade 2: %s \n", cidade2);
     printf("Estado 2: %s \n", estado2);
@@ -72,7 +86,8 @@ int main() {
     printf("População 2:%d \n", população2);
     printf("Area 2: %.2fkm²\n", area2);
     printf("PIB 2: %f Bilhões de reais\n", pib2);
-    
+    printf("Densidade Populacional 2: %.2f hab/km²\n", densidade2);
+    printf("PIB Per Capital 2: %f reais\n", PIB2);
   
    
     return 0;
